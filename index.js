@@ -176,7 +176,7 @@ const getDateToday = () =>{
 }
 
 const getTimeNow = () =>{
-    const timedate = giveCurrentDateTime();
+    const datetime = giveCurrentDateTime();
     let time = datetime.split(' ')[1];
     time = time.split(':');
     let h = parseInt(time[0]);
