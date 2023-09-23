@@ -146,7 +146,8 @@ app.post("/delete", function(req, res) {
 });
 
 const giveCurrentDateTime = () => {
-    const today = new Date();
+    const asiaDhaka = new Date().toLocaleString([], { timeZone: "Asia/Dhaka" });
+    const today = new Date(asiaDhaka);
     const date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     const dateTime = date + ' ' + time;
